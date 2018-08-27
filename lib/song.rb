@@ -11,11 +11,7 @@ class Song
   end
   
   def artist_name
-    if self.artist == nil
-      nil
-    else 
-      self.artist.name
-    end
+    if self.artist ? self.artist.name : nil
   end
-
+#if_this_is_a_true_value ? then_the_result_is_this : else_it_is_this
 end
