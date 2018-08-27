@@ -10,6 +10,10 @@ class Song
   end
   
   def artist_name
-    return self.artist.name
+    if self.artist_name = nil
+      nil
+    else 
+      self.artist.name
+    end
   end
 end
