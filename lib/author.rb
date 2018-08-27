@@ -15,6 +15,8 @@ class Author
    @@all.reduce(0) { |count, author| count + author.posts.size }
  end
   
+def author_name
+  
   
   def add_post(post)
     @posts << post
