@@ -11,7 +11,7 @@ class Author
   end
   
   def self.post_count
-    @@all.reduce {}
+   @@all.reduce(0) { |count, author| count + author.posts.size }{}
   
   
   def add_post(post)
