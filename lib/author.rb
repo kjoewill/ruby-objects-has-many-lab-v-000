@@ -1,5 +1,7 @@
 class Author 
   
+  @@all = []
+  
   attr_accessor :name 
   attr_reader :posts
   
@@ -7,6 +9,10 @@ class Author
     @name = name
     @posts = []
   end
+  
+  def self.post_count
+    @@all.reduce {}
+  
   
   def add_post(post)
     @posts << post
