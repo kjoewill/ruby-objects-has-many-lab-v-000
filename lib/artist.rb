@@ -7,7 +7,8 @@ class Artist
   
   
   def self.song_count
-    @@all.reduce(0) { |count, num| sum + num }
+    @@all.reduce(0) { |count, artist_songs| count + artist_songs.size }
+  end
   
   def initialize(name)
     @name = name
