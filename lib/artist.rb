@@ -5,7 +5,6 @@ class Artist
   attr_accessor :name
   attr_reader :songs
   
-  
   def self.song_count
     @@all.reduce(0) { |count, artist| count + artist.songs.size }
   end
